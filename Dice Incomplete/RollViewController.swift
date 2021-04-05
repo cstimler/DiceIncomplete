@@ -32,6 +32,8 @@ class RollViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Checking identifier is important when multiple segues are possible:
+        if segue.identifier == "rollDice" {
         let controller = segue.destination as! DiceViewController
         
         controller.firstValue = randomDiceValue()
@@ -39,5 +41,6 @@ class RollViewController: UIViewController {
     }
     
     
+    }
 }
 
