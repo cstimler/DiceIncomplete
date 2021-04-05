@@ -31,6 +31,13 @@ class RollViewController: UIViewController {
       // Now this function is empty because the segway is done entirely via the story board by linking the button to the next viewController
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! DiceViewController
+        
+        controller.firstValue = randomDiceValue()
+        controller.secondValue = randomDiceValue()
+    }
+    
     
 }
 
