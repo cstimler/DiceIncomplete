@@ -28,7 +28,7 @@ class RollViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func rollTheDice() {
-       performSegue(withIdentifier: "rollDice", sender: self)
+      // Now this function is empty because the segway is done entirely via the story board by linking the button to the next viewController
     }
     
     
